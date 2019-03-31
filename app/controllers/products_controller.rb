@@ -5,7 +5,7 @@ class ProductsController < ApplicationController
   end
 
   def add
-    @product = session[:product]
+    @product = params[:product]
     raise @product.inspect
     cart << @product
 
