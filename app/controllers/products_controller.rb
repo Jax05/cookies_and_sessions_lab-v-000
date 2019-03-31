@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
 
   def add
     @product = session[:product]
-    raise @product
+    raise @product.inspect
     cart << @product
 
     redirect_to root_path
