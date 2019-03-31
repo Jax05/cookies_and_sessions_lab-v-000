@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
 
   def index
-    session.clear
+    # session.clear
     @cart = cart
   end
 
