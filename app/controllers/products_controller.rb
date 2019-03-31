@@ -6,6 +6,7 @@ class ProductsController < ApplicationController
 
   def add
     @product = session[:product]
+    raise @product
     cart << @product
 
     redirect_to root_path
