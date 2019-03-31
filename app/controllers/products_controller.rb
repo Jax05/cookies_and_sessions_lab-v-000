@@ -5,6 +5,10 @@ class ProductsController < ApplicationController
   end
 
   def add
+    @product = session[:product]
+    cart << @product
+
+    redirect_to :index
   end
 
 end
