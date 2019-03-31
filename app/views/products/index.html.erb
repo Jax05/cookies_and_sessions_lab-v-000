@@ -1,6 +1,7 @@
 <h1>Add products to your cart</h1>
-<%= form_for @products do |f| %>
-  <%= f.label :product %>
-  <%= f.text_field :product %><br />
-  <%= f.submit %>
+
+<%= form_tag("/add", method: "post") do %>
+  <%= label_tag(:product, "Product:") %>
+  <%= text_field_tag(:product) %>
+  <%= submit_tag("Add") %>
 <% end %>
