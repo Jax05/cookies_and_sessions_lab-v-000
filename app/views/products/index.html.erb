@@ -8,6 +8,7 @@
 
 <h2>Cart:</h2>
 <ul>
+  <% raise session.inspect %>
   <%= @cart.each do |product| %>
     <li><%= product %></li>
   <% end %>
