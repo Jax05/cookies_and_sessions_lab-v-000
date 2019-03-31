@@ -1,7 +1,7 @@
 <h1>Add products to your cart</h1>
 
 <%= form_tag("/add", method: "post") do %>
-  <%= label_tag(session[:product], "Product:") %>
-  <%= text_field_tag(session[:product]) %>
+  <%= label_tag("Product:") %>
+  <%= text_field_tag(:session[:product]) %>
   <%= submit_tag("add to cart") %><br /><br />
 <% end %>
