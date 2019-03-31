@@ -1,7 +1,6 @@
 class ProductsController < ApplicationController
 
   def index
-    session.clear
   end
 
   def add
