@@ -7,12 +7,8 @@
 <% end %>
 
 <h2>Cart:</h2>
-<% if cart.count < 1 %>
-  <ul>
-    <%= cart.each do |product| %>
-      <li><%= product %></li>
-    <% end %>
-  </ul>
-<% else %>
-  <h3>you should add products</h3>
-<% end %>
+<ul>
+  <%= cart.each do |product| %>
+    <li><%= product %></li>
+  <% end %>
+</ul>
