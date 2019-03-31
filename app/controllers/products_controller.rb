@@ -3,7 +3,6 @@ class ProductsController < ApplicationController
   def index
     # session.clear
     @cart = cart
-    raise @cart.inspect
   end
 
   def add
