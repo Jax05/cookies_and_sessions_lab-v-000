@@ -6,13 +6,9 @@
   <%= submit_tag("add to cart") %><br /><br />
 <% end %>
 
-<% if @cart %>
-  <h2>Cart:</h2>
-  <ul>
-    <%= @cart.each do |product| %>
-      <li><%= product %></li>
-    <% end %>
-  </ul>
-<% else %>
-  <h2>Cart is empty</h2>
-<% end %>
+<h2>Cart:</h2>
+<ul>
+  <%= @cart.each do |product| %>
+    <li><%= product %></li>
+  <% end %>
+</ul>
