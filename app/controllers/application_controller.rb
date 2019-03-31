@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   private
     def cart
-      cart = session[cart_id]
+      cart = session[cart_id] || []
 
       cart
     end
