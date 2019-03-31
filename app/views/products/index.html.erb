@@ -10,7 +10,7 @@
   <h2>Cart:</h2>
   <ul>
     <%= @cart.each do |product| %>
-      <li><%= product %></li>
+      <li><%= product.name %></li>
     <% end %>
   </ul>
 <% end %>
