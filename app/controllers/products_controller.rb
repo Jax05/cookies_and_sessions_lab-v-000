@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
     @product = session[:product]
     cart << @product
 
-    redirect_to :index
+    redirect_to products_path
   end
 
 end
