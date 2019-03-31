@@ -6,7 +6,6 @@ class ProductsController < ApplicationController
 
   def add
     @product = params[:product]
-    raise @product.inspect
     cart << @product
 
     redirect_to root_path
